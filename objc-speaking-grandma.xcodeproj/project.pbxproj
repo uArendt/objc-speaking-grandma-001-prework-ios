@@ -12,7 +12,7 @@
 		7B5862848B8903ECA3B7C946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E87236B6C073D23313B116 /* Foundation.framework */; };
 		7E356B9BDD7298AF1017E623 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88ABA1D3EA0FB78FFFB6E987 /* Images.xcassets */; };
 		7EF71D0154EE26961647314E /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7204927E7B787628659BECEB /* libPods-unit_tests.a */; };
-		85044B8BA480A2E1EBD7BC54 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = DE7C8BE0D9AADAB21588CC9C /* Main.storyboard */; };
+		85044B8BA480A2E1EBD7BC54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7C8BE0D9AADAB21588CC9C /* Main.storyboard */; };
 		AB13756CBF94F34FABA64A6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A43FE2D03B880F765CD948 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -177,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FIS;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "The Flatiron School";
 			};
 			buildConfigurationList = CAE64C1B74F8CFEC5B61B764 /* Build configuration list for PBXProject "objc-speaking-grandma" */;
@@ -204,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E356B9BDD7298AF1017E623 /* Images.xcassets in Resources */,
+				85044B8BA480A2E1EBD7BC54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0377B6C2B780A55AEEECCB92 /* FISAppDelegate.m in Sources */,
-				85044B8BA480A2E1EBD7BC54 /* Main.storyboard in Sources */,
 				79757ABB4D1426DFDD4603E5 /* LaunchScreen.xib in Sources */,
 				AB13756CBF94F34FABA64A6D /* main.m in Sources */,
 			);
@@ -345,6 +345,7 @@
 				INFOPLIST_FILE = "objc-speaking-grandma/Resources/Other-Sources/objc-speaking-grandma-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -373,6 +374,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -462,6 +464,7 @@
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
